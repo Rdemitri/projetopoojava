@@ -27,6 +27,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnCadastrarCliente = new javax.swing.JButton();
         lblMenuPrincipal = new javax.swing.JLabel();
         mnbBarraMenu = new javax.swing.JMenuBar();
         jMenuCadastro = new javax.swing.JMenu();
@@ -36,6 +37,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
+
+        btnCadastrarCliente.setText("Cadastrar Cliente");
+        btnCadastrarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastrarClienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCadastrarCliente);
+        btnCadastrarCliente.setBounds(180, 150, 170, 100);
 
         lblMenuPrincipal.setDisplayedMnemonic('M');
         lblMenuPrincipal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -69,6 +79,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(833, 681));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCadastrarClienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,6 +120,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCadastrarCliente;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenuCadastro;
     private javax.swing.JMenuItem jMenuCliente;

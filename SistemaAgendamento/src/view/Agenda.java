@@ -29,6 +29,7 @@ public class Agenda extends javax.swing.JFrame {
 
         txtNome = new javax.swing.JTextField();
         lblNome = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         lblAgendaPainelFundo = new javax.swing.JLabel();
         lblAgendaFundo = new javax.swing.JLabel();
 
@@ -49,6 +50,14 @@ public class Agenda extends javax.swing.JFrame {
         getContentPane().add(lblNome);
         lblNome.setBounds(90, 180, 60, 30);
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(170, 230, 230, 30);
+
         lblAgendaPainelFundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAgendaPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/Agenda-PainelFundo.png"))); // NOI18N
         getContentPane().add(lblAgendaPainelFundo);
@@ -67,6 +76,10 @@ public class Agenda extends javax.swing.JFrame {
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -104,6 +117,7 @@ public class Agenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblAgendaFundo;
     private javax.swing.JLabel lblAgendaPainelFundo;
     private javax.swing.JLabel lblNome;
